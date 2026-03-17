@@ -1194,5 +1194,11 @@ def main():
     print(f"  ⚠️   Análisis estadístico. NO garantiza resultados.")
     print(f"  Apuesta solo lo que puedas permitirte perder.")
     print(f"{SEP2}\n")
-
+# ── ENVÍO A TELEGRAM ─────────────────────────────────────────
+    print("\n  🚀 Compilando y enviando reporte a Telegram...")
+    mensaje_tg = compilar_mensaje_telegram(
+        FECHAS_ANALISIS[0], todos_los_partidos, lista_a, lista_b, lista_c, lista_elite
+    )
+    enviar_telegram(mensaje_tg)
+    print("  ✅ Proceso finalizado con éxito.")
 
