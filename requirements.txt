@@ -1,0 +1,5 @@
+requests
+pandas
+tabulate
+nest_asyncio
+beautifulsoup4
