@@ -46,15 +46,15 @@ TELEGRAM_CHAT_ID      = "5933853317"
 CUOTA_MIN_LISTA_A     = 1.25   # Rango Doble Oportunidad — mínimo
 CUOTA_MAX_LISTA_A     = 1.45   # Rango Doble Oportunidad — máximo
 PROB_MINIMA_LISTA_A   = 70.0   # Probabilidad mínima implícita requerida
-CUOTA_MIN_LISTA_B     = 1.70
-CUOTA_MAX_LISTA_B     = 2.20
-MAX_LISTA_A_POR_DIA   = 12
+CUOTA_MIN_LISTA_B     = 1.60
+CUOTA_MAX_LISTA_B     = 2.30
+MAX_LISTA_A_POR_DIA   = 20
 PROB_MINIMA_LISTA_C   = 70.0
 LINEA_GOLES           = 2.5
-PARLAY_CUOTA_MIN      = 1.50
-PARLAY_CUOTA_MAX      = 2.20
-PARLAY_MAX_RESULTADOS = 5
-BOOKMAKER_PREFERIDO   = "betano"  # Solo cuotas de Betano
+PARLAY_CUOTA_MIN      = 1.40
+PARLAY_CUOTA_MAX      = 2.40
+PARLAY_MAX_RESULTADOS = 8
+BOOKMAKER_PREFERIDO   = ""  # Solo cuotas de Betano
 
 # ═══════════════════════════════════════════════════════════════════
 #  📅  FECHAS
