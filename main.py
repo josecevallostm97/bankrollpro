@@ -57,12 +57,15 @@ PARLAY_MAX_RESULTADOS = 8
 BOOKMAKER_PREFERIDO   = ""  # Solo cuotas de Betano
 
 # ═══════════════════════════════════════════════════════════════════
-#  📅  FECHAS
+#  📅  FECHAS (Corregido para noches de LatAm)
 # ═══════════════════════════════════════════════════════════════════
+from datetime import timedelta
 
 def obtener_fechas_analisis():
     hoy = datetime.now(timezone.utc).date()
-    return [hoy], {hoy: "HOY"}
+    manana = hoy + timedelta(days=1)
+    # Traemos hoy y mañana (UTC) para capturar los partidos nocturnos de América
+    return [hoy, manana], {hoy: "HOY", manana: "MAÑANA (Noche LatAm)"}
 
 FECHAS_ANALISIS, ETIQUETAS_FECHAS = obtener_fechas_analisis()
 
@@ -110,6 +113,7 @@ LIGAS = [
     {"nombre": "Liga Pro (Ecuador)",           "sport_key": "soccer_ecuador_liga_pro"},
     {"nombre": "Primera A (Colombia)",         "sport_key": "soccer_colombia_primera_a"},
     {"nombre": "Primera División (Chile)",     "sport_key": "soccer_chile_campeonato"},
+    {"nombre": "MLS (USA)",                    "sport_key": "soccer_usa_mls"},
 ]
 
 # ═══════════════════════════════════════════════════════════════════
